@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{735A7D0E-0071-422F-82A9-8EC263C97449}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UCL_OOP_I</RootNamespace>
+    <AssemblyName>UCL_OOP_I</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.12.1.2\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IfoodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IfoodForm.Designer.cs">
+      <DependentUpon>IfoodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyScores.Designer.cs">
+      <DependentUpon>MyScores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rewards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rewards.Designer.cs">
+      <DependentUpon>rewards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trash.cs" />
+    <Compile Include="Trash_register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trash_register.Designer.cs">
+      <DependentUpon>Trash_register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UberForm.Designer.cs">
+      <DependentUpon>UberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="User_register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_register.Designer.cs">
+      <DependentUpon>User_register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IfoodForm.resx">
+      <DependentUpon>IfoodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyScores.resx">
+      <DependentUpon>MyScores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rewards.resx">
+      <DependentUpon>rewards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trash_register.resx">
+      <DependentUpon>Trash_register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UberForm.resx">
+      <DependentUpon>UberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_register.resx">
+      <DependentUpon>User_register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\User.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\amazon_PNG5.png" />
+    <Content Include="icons\checked.png" />
+    <Content Include="icons\chip.png" />
+    <Content Include="icons\circle-area-pattern-green-dotted-circle-png-download-25972519-dotted-circle-png-900_880.jpg" />
+    <Content Include="icons\coach.png" />
+    <Content Include="icons\cross.png" />
+    <Content Include="icons\earth-43930_960_720.png" />
+    <Content Include="icons\gas.png" />
+    <Content Include="icons\logo_ifood.png" />
+    <Content Include="icons\medal.png" />
+    <Content Include="icons\online-payment.png" />
+    <Content Include="icons\recycle %281%29.png" />
+    <Content Include="icons\recycle.png" />
+    <Content Include="icons\recycling.png" />
+    <Content Include="icons\save.png" />
+    <Content Include="icons\steam-lvl-up-png-steam-video-games-clipart-44fd4469740f2e07.jpg" />
+    <Content Include="icons\uber-logo-computer-icons-android-cartoon-network-png-download-uber-png-900_520.jpg" />
+    <Content Include="icons\uber_PNG24.png" />
+    <Content Include="icons\water-cycle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
