@@ -9,7 +9,7 @@ namespace UCL_OOP_I {
 
         public Cupom()
         {
-            //AGORA VAI
+            //SIMULAÇÃO DE GERAR CUPONS
         }
 
         public static string cod_cupom()

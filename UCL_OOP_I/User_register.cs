@@ -12,13 +12,11 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace UCL_OOP_I
-{
-    public partial class User_register : Form
-    {
+namespace UCL_OOP_I {
+    public partial class User_register : Form {
         XmlSerializer xs;
         List<User> user_list;
-        private static string endereço = "C:\\Users\\Willian\\Desktop\\UCL_User.Xml"; 
+        private static string endereço = "C:\\Users\\Willian\\Desktop\\UCL_User.Xml";
         //{ get; set; }
 
         public User_register()
@@ -41,38 +39,56 @@ namespace UCL_OOP_I
             {
                 Upload_user_xml();
             }
-            else{
+            else
+            {
                 Create_new_xml();
+                MessageBox.Show("User has been successfully saved!");
             }
-            MessageBox.Show("User has been successfully saved!");
+
             this.Close();
         }
         private void Upload_user_xml()
         {
+            int aux = 0;
             XmlDocument doc = new XmlDocument();
-
             doc.Load(User_register.Get_endereço());
-            XmlNode Client = doc.CreateElement("User");
 
-            XmlNode Name = doc.CreateElement("Name");
+            foreach (XmlNode node in doc.SelectNodes("/Client/User"))
+            {
+                if (double.Parse(idbox.Text) == double.Parse(node.SelectSingleNode("ID").InnerText))
+                {
+                    MessageBox.Show("The user is already registered!");
+                    aux = 1;
+                    break;
+                }
+            }
+
+            if (aux == 0)
+            {
+                XmlNode Client = doc.CreateElement("User");
+
+                XmlNode Name = doc.CreateElement("Name");
                 Name.InnerText = Namebox.Text;
                 Client.AppendChild(Name);
 
-            XmlNode Age = doc.CreateElement("Age");
+                XmlNode Age = doc.CreateElement("Age");
                 Age.InnerText = agebox.Text;
                 Client.AppendChild(Age);
 
-            XmlNode Id = doc.CreateElement("ID");
+                XmlNode Id = doc.CreateElement("ID");
                 Id.InnerText = idbox.Text;
                 Client.AppendChild(Id);
 
-            XmlNode Score = doc.CreateElement("Score");
+                XmlNode Score = doc.CreateElement("Score");
                 Score.InnerText = "0";
                 Client.AppendChild(Score);
 
-            doc.DocumentElement.AppendChild(Client);
+                doc.DocumentElement.AppendChild(Client);
 
-            doc.Save(User_register.Get_endereço());
+                doc.Save(User_register.Get_endereço());
+
+                MessageBox.Show("User has been successfully saved!");
+            }
         }
         private void Create_new_xml()
         {

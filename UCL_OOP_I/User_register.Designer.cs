@@ -38,6 +38,7 @@
             this.agebox = new System.Windows.Forms.TextBox();
             this.idbox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Close_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +83,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(50)))), ((int)(((byte)(81)))));
-            this.label2.Location = new System.Drawing.Point(68, 120);
+            this.label2.Location = new System.Drawing.Point(65, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 25);
             this.label2.TabIndex = 3;
@@ -93,22 +94,23 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(50)))), ((int)(((byte)(81)))));
-            this.label3.Location = new System.Drawing.Point(36, 180);
+            this.label3.Location = new System.Drawing.Point(65, 180);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 25);
+            this.label3.Size = new System.Drawing.Size(54, 25);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Social ID";
+            this.label3.Text = "CPF";
             // 
             // Namebox
             // 
-            this.Namebox.Location = new System.Drawing.Point(132, 71);
+            this.Namebox.Location = new System.Drawing.Point(132, 76);
             this.Namebox.Name = "Namebox";
             this.Namebox.Size = new System.Drawing.Size(100, 20);
             this.Namebox.TabIndex = 5;
             // 
             // agebox
             // 
-            this.agebox.Location = new System.Drawing.Point(132, 120);
+            this.agebox.Location = new System.Drawing.Point(132, 125);
+            this.agebox.MaxLength = 2;
             this.agebox.Name = "agebox";
             this.agebox.Size = new System.Drawing.Size(100, 20);
             this.agebox.TabIndex = 6;
@@ -117,8 +119,9 @@
             // 
             this.idbox.Location = new System.Drawing.Point(132, 180);
             this.idbox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.idbox.MaxLength = 11;
             this.idbox.Name = "idbox";
-            this.idbox.Size = new System.Drawing.Size(116, 20);
+            this.idbox.Size = new System.Drawing.Size(141, 20);
             this.idbox.TabIndex = 7;
             // 
             // pictureBox1
@@ -131,11 +134,23 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(50)))), ((int)(((byte)(81)))));
+            this.label4.Location = new System.Drawing.Point(65, 205);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(151, 25);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Only numbers!";
+            // 
             // User_register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 301);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.idbox);
             this.Controls.Add(this.agebox);
@@ -166,5 +181,6 @@
         private System.Windows.Forms.TextBox agebox;
         private System.Windows.Forms.TextBox idbox;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label4;
     }
 }

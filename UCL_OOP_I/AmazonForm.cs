@@ -36,9 +36,17 @@ namespace UCL_OOP_I {
             {
                 string cupom = Cupom.cod_cupom();
                 node.SetElementValue("Score", (pontos_atuais - 200000));
-                MessageBox.Show("Cupom: R4P:AMAZON#{0}", cupom);
+                MessageBox.Show("Cupom: R4P:AMAZON#" + cupom);
+
+                MessageBox.Show("Restante de pontos: " + pontos_atuais);
             }
             xDoc.Save(User_register.Get_endereço());
+            this.Close();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            //Close button
             this.Close();
         }
     }

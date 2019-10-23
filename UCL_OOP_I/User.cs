@@ -10,9 +10,9 @@ namespace UCL_OOP_I
     {
         #region Info
         public string Name { get; set; }
-        public int Age{ get; set; }
-        public int User_id{ get; set; }
-        public Double Eco_points { get; set; }
+        public double Age{ get; set; }
+        public double User_id{ get; set; }
+        public double Eco_points { get; set; }
         #endregion
 
         #region contructor
