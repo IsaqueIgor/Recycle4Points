@@ -58,7 +58,7 @@
             // Close_btn
             // 
             this.Close_btn.Image = ((System.Drawing.Image)(resources.GetObject("Close_btn.Image")));
-            this.Close_btn.Location = new System.Drawing.Point(315, 3);
+            this.Close_btn.Location = new System.Drawing.Point(319, 3);
             this.Close_btn.Name = "Close_btn";
             this.Close_btn.Size = new System.Drawing.Size(21, 29);
             this.Close_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

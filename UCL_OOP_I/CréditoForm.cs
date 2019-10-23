@@ -9,11 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
-namespace UCL_OOP_I
-{
-    public partial class IfoodForm : Form
-    {
-        public IfoodForm()
+namespace UCL_OOP_I {
+    public partial class CréditoForm : Form {
+        public CréditoForm()
         {
             InitializeComponent();
         }
@@ -30,15 +28,15 @@ namespace UCL_OOP_I
                 xDoc.Save(User_register.Get_endereço());
                 this.Close();
             }
-            else if (pontos_atuais < 100000)
+            else if (pontos_atuais < 80000)
             {
-                MessageBox.Show("You Need at least 100.000 Points to change for Uber Coupon! You have " + pontos_atuais + " Points");
+                MessageBox.Show("You Need at least 80.000 Points to change for Uber Coupon! You have " + pontos_atuais + " Points");
             }
             else
             {
                 string cupom = Cupom.cod_cupom();
-                node.SetElementValue("Score", (pontos_atuais - 100000));
-                MessageBox.Show("Cupom: R4P:IFOOD#{0}", cupom);
+                node.SetElementValue("Score", (pontos_atuais - 80000));
+                MessageBox.Show("Cupom: R4P:CRÉDITO#{0}", cupom);
             }
             xDoc.Save(User_register.Get_endereço());
             this.Close();

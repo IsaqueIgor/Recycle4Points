@@ -52,11 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cupom.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CréditoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CréditoForm.Designer.cs">
+      <DependentUpon>CréditoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AmazonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmazonForm.Designer.cs">
+      <DependentUpon>AmazonForm.cs</DependentUpon>
     </Compile>
     <Compile Include="IfoodForm.cs">
       <SubType>Form</SubType>
@@ -98,8 +111,14 @@
     <Compile Include="User_register.Designer.cs">
       <DependentUpon>User_register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AmazonForm.resx">
+      <DependentUpon>AmazonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CréditoForm.resx">
+      <DependentUpon>CréditoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IfoodForm.resx">
       <DependentUpon>IfoodForm.cs</DependentUpon>

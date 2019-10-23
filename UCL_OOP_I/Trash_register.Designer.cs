@@ -41,6 +41,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.qualitybox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.clsbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recycle_button)).BeginInit();
             this.SuspendLayout();
@@ -125,7 +127,7 @@
             // 
             this.recycle_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.recycle_button.Image = ((System.Drawing.Image)(resources.GetObject("recycle_button.Image")));
-            this.recycle_button.Location = new System.Drawing.Point(118, 275);
+            this.recycle_button.Location = new System.Drawing.Point(118, 293);
             this.recycle_button.Name = "recycle_button";
             this.recycle_button.Size = new System.Drawing.Size(100, 50);
             this.recycle_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -138,7 +140,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(50)))), ((int)(((byte)(81)))));
-            this.label4.Location = new System.Drawing.Point(101, 328);
+            this.label4.Location = new System.Drawing.Point(101, 346);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(138, 29);
             this.label4.TabIndex = 8;
@@ -147,7 +149,7 @@
             // qualitybox
             // 
             this.qualitybox.FormattingEnabled = true;
-            this.qualitybox.Location = new System.Drawing.Point(180, 200);
+            this.qualitybox.Location = new System.Drawing.Point(178, 228);
             this.qualitybox.Name = "qualitybox";
             this.qualitybox.Size = new System.Drawing.Size(121, 21);
             this.qualitybox.TabIndex = 10;
@@ -157,17 +159,39 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(50)))), ((int)(((byte)(81)))));
-            this.label5.Location = new System.Drawing.Point(52, 200);
+            this.label5.Location = new System.Drawing.Point(50, 228);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(118, 22);
             this.label5.TabIndex = 9;
             this.label5.Text = "Trash Quality";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(178, 191);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(50)))), ((int)(((byte)(81)))));
+            this.label6.Location = new System.Drawing.Point(50, 190);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 22);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Trash Item";
             // 
             // Trash_register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(353, 423);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.qualitybox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -204,5 +228,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox qualitybox;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label6;
     }
 }

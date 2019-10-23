@@ -19,14 +19,35 @@ namespace UCL_OOP_I
             comboBoxTrashType.Items.Add(TrashType.Metal);
             comboBoxTrashType.Items.Add(TrashType.Paper);
             comboBoxTrashType.Items.Add(TrashType.Plastic);
+            comboBoxTrashType.Items.Add(TrashType.Eletronics);
             qualitybox.Items.Add(TrashQuality.Excellent);
-            qualitybox.Items.Add(TrashQuality.Average);
             qualitybox.Items.Add(TrashQuality.Good);
-            qualitybox.Items.Add(TrashQuality.Poor);
+            qualitybox.Items.Add(TrashQuality.Average);
             qualitybox.Items.Add(TrashQuality.Low);
+            qualitybox.Items.Add(TrashQuality.Poor);
+            comboBox1.Items.Add(Glass.Vidro_cristal);
+            comboBox1.Items.Add(Paper.Papelão);
+            comboBox1.Items.Add(Paper.Papel_comum);
+            comboBox1.Items.Add(Paper.Revista);
+            comboBox1.Items.Add(Paper.Jornal);
+            comboBox1.Items.Add(Metal.Alumínio);
+            comboBox1.Items.Add(Metal.Cobre);
+            comboBox1.Items.Add(Metal.Outros_metais);
+            comboBox1.Items.Add(Eletronics.Pilhas);
+            comboBox1.Items.Add(Eletronics.PC);
+            comboBox1.Items.Add(Eletronics.Impressora);
+            comboBox1.Items.Add(Eletronics.Celular);
+            comboBox1.Items.Add(Plastic.PET);
+            comboBox1.Items.Add(Plastic.Sacola);
+            comboBox1.Items.Add(Plastic.Isopor);
         }
 
         private void ComboBoxTrashType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
@@ -38,13 +59,13 @@ namespace UCL_OOP_I
 
         private void Recycle_button_Click(object sender, EventArgs e)
         {
-            var xDoc = XDocument.Load("C:\\Users\\Isaque\\Documents\\Isaque\\UCL_User.Xml");
+            var xDoc = XDocument.Load(User_register.Get_endereço());
             var node = xDoc.Descendants("User").FirstOrDefault(us => us.Element("ID").Value == id_user.Text);
 
             if(node == null)
             {
                 MessageBox.Show("User not Found!");
-                xDoc.Save("C:\\Users\\Isaque\\Documents\\Isaque\\UCL_User.Xml");
+                xDoc.Save(User_register.Get_endereço());
                 this.Close();
             }
 
@@ -53,7 +74,7 @@ namespace UCL_OOP_I
             node.SetElementValue("Score", new_score);
 
             MessageBox.Show("Success! Thanks for your collaboration =)");
-            xDoc.Save("C:\\Users\\Isaque\\Documents\\Isaque\\UCL_User.Xml");
+            xDoc.Save(User_register.Get_endereço());
         }
 
         private double Calcular_pontos(double trash_weight)
@@ -62,17 +83,85 @@ namespace UCL_OOP_I
             TrashType x = (TrashType) comboBoxTrashType.SelectedItem;
             switch (x)
             {
-                case TrashType.Glass:
-                    Pontos = trash_weight * (10);
+                case TrashType.Paper:
+                    Paper a = (Paper) comboBox1.SelectedItem;
+
+                    switch (a)
+                    {
+                        case Paper.Papelão:
+                            Pontos += (trash_weight*250);
+                            break;
+                        case Paper.Papel_comum:
+                            Pontos += (trash_weight*300);
+                            break;
+                        case Paper.Revista:
+                            Pontos += (trash_weight*250);
+                            break;
+                        case Paper.Jornal:
+                            Pontos += (trash_weight*250);
+                            break;
+                    }
                     break;
                 case TrashType.Metal:
-                    Pontos = trash_weight *(15);
+                    Metal b = (Metal)comboBox1.SelectedItem;
+
+                    switch (b)
+                    {
+                        case Metal.Alumínio:
+                            Pontos += (trash_weight*3500);
+                            break;
+                        case Metal.Cobre:
+                            Pontos += (trash_weight*7500);
+                            break;
+                        case Metal.Outros_metais:
+                            Pontos += (trash_weight*300);
+                            break;
+                    }
                     break;
-                case TrashType.Paper:
-                    Pontos = trash_weight * (20);
+                case TrashType.Glass:
+                    Glass c = (Glass)comboBox1.SelectedItem;
+
+                    switch (c)
+                    {
+                        case Glass.Vidro_cristal:
+                            Pontos += (trash_weight*80);
+                            break;
+                    }
                     break;
                 case TrashType.Plastic:
-                    Pontos = trash_weight * (25);
+                    Plastic d = (Plastic)comboBox1.SelectedItem;
+
+                    switch (d)
+                    {
+                        case Plastic.PET:
+                            Pontos += (trash_weight*800);
+                            break;
+                        case Plastic.Sacola:
+                            Pontos += (trash_weight*300);
+                            break;
+                        case Plastic.Isopor:
+                            Pontos += (trash_weight*40);
+                            break;
+                    }
+                    break;
+                case TrashType.Eletronics:
+                    Eletronics e = (Eletronics)comboBox1.SelectedItem;
+
+                    switch (e)
+                    {
+                        case Eletronics.Pilhas:
+                            Pontos += (trash_weight*20);
+                            break;
+                        case Eletronics.PC:
+                            Pontos += (trash_weight*800);
+                            break;
+                        case Eletronics.Celular:
+                            Pontos += (trash_weight*1800);
+                            break;
+                        case Eletronics.Impressora:
+                            Pontos += (trash_weight*1800);
+                            break;
+                    }
                     break;
             }
             return Pontos;

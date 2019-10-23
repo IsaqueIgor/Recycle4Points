@@ -27,7 +27,7 @@ namespace UCL_OOP_I
         private void PictureBox3_Click(object sender, EventArgs e)
         {
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load("C:\\Users\\Isaque\\Documents\\Isaque\\UCL_User.Xml");
+            xDoc.Load(User_register.Get_endereço());
 
             var listagem = new List<User>();
 

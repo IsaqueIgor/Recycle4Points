@@ -40,7 +40,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(75, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -50,19 +50,20 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(75, 281);
+            this.pictureBox2.Location = new System.Drawing.Point(95, 318);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(50)))), ((int)(((byte)(81)))));
-            this.label5.Location = new System.Drawing.Point(95, 172);
+            this.label5.Location = new System.Drawing.Point(104, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 22);
             this.label5.TabIndex = 12;
@@ -70,7 +71,7 @@
             // 
             // IdBox
             // 
-            this.IdBox.Location = new System.Drawing.Point(73, 149);
+            this.IdBox.Location = new System.Drawing.Point(72, 108);
             this.IdBox.Name = "IdBox";
             this.IdBox.Size = new System.Drawing.Size(123, 20);
             this.IdBox.TabIndex = 11;
@@ -79,7 +80,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 350);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(284, 380);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.IdBox);
             this.Controls.Add(this.pictureBox2);

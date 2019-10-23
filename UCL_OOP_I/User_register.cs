@@ -18,6 +18,8 @@ namespace UCL_OOP_I
     {
         XmlSerializer xs;
         List<User> user_list;
+        private static string endereço = "C:\\Users\\Willian\\Desktop\\UCL_User.Xml"; 
+        //{ get; set; }
 
         public User_register()
         {
@@ -26,11 +28,16 @@ namespace UCL_OOP_I
             xs = new XmlSerializer(typeof(List<User>));
         }
 
+        public static string Get_endereço()
+        {
+            return endereço;
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
             //Save button - Create User
 
-            if (File.Exists("C:\\Users\\Isaque\\Documents\\Isaque\\UCL_User.Xml"))
+            if (File.Exists(User_register.Get_endereço()))
             {
                 Upload_user_xml();
             }
@@ -44,7 +51,7 @@ namespace UCL_OOP_I
         {
             XmlDocument doc = new XmlDocument();
 
-            doc.Load("C:\\Users\\Isaque\\Documents\\Isaque\\UCL_User.Xml");
+            doc.Load(User_register.Get_endereço());
             XmlNode Client = doc.CreateElement("User");
 
             XmlNode Name = doc.CreateElement("Name");
@@ -65,11 +72,11 @@ namespace UCL_OOP_I
 
             doc.DocumentElement.AppendChild(Client);
 
-            doc.Save("C:\\Users\\Isaque\\Documents\\Isaque\\UCL_User.Xml");
+            doc.Save(User_register.Get_endereço());
         }
         private void Create_new_xml()
         {
-            XmlTextWriter xwriter = new XmlTextWriter("C:\\Users\\Isaque\\Documents\\Isaque\\UCL_User.Xml", Encoding.UTF8);
+            XmlTextWriter xwriter = new XmlTextWriter(User_register.Get_endereço(), Encoding.UTF8);
             xwriter.Formatting = Formatting.Indented;
             xwriter.WriteStartElement("Client");
             xwriter.WriteStartElement("User");

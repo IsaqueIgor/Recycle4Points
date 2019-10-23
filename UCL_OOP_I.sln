@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCL_OOP_I", "E:\Recycle4Points-master\UCL_OOP_I\UCL_OOP_I.csproj", "{735A7D0E-0071-422F-82A9-8EC263C97449}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCL_OOP_I", "UCL_OOP_I\UCL_OOP_I.csproj", "{735A7D0E-0071-422F-82A9-8EC263C97449}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

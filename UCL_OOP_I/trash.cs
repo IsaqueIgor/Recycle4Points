@@ -12,8 +12,18 @@ namespace UCL_OOP_I
 
         public double Trash_weight { get; set; }
 
-        public enum TrashType { Paper , Metal , Plastic , Glass }
+        public enum TrashType { Paper , Metal , Plastic , Glass, Eletronics }
 
-        public enum TrashQuality { Excellent , Good, Average , Poor, Low}
+        public enum TrashQuality { Excellent , Average, Good, Low, Poor}
+
+        public enum Paper { Papelão, Papel_comum, Revista, Jornal }
+
+        public enum Metal { Alumínio, Cobre, Outros_metais}
+
+        public enum Plastic { PET, Sacola, Isopor}
+
+        public enum Glass { Vidro_cristal }
+
+        public enum Eletronics { Pilhas, PC, Impressora, Celular}
     }
 }

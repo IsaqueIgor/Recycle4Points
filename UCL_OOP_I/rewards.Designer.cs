@@ -53,9 +53,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(555, 191);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 13);
+            this.label6.Size = new System.Drawing.Size(83, 13);
             this.label6.TabIndex = 24;
-            this.label6.Text = "Recarga Gratís";
+            this.label6.Text = "Recarga Celular";
             // 
             // label5
             // 
@@ -94,6 +94,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 18;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click_1);
             // 
             // pictureBox6
             // 
@@ -105,6 +106,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click_1);
             // 
             // pictureBox3
             // 
@@ -116,6 +118,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
             // 
             // pictureBox2
             // 
@@ -157,7 +160,7 @@
             this.description.BackColor = System.Drawing.Color.Transparent;
             this.description.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(50)))), ((int)(((byte)(81)))));
-            this.description.Location = new System.Drawing.Point(268, 87);
+            this.description.Location = new System.Drawing.Point(287, 84);
             this.description.Name = "description";
             this.description.Size = new System.Drawing.Size(228, 26);
             this.description.TabIndex = 26;
