@@ -35,10 +35,10 @@ namespace UCL_OOP_I
         private void PictureBox3_Click(object sender, EventArgs e)
         {
 
-            if (File.Exists(User_register.Get_endereço()))
+            if (File.Exists(Form1.Endereço))
             {
                 XmlDocument xDoc = new XmlDocument();
-                xDoc.Load(User_register.Get_endereço());
+                xDoc.Load(Form1.Endereço);
 
                 var listagem = new List<User>();
 

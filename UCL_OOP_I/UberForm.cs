@@ -20,14 +20,14 @@ namespace UCL_OOP_I
 
         private void PictureBox2_Click(object sender, EventArgs e)
         {
-            var xDoc = XDocument.Load(User_register.Get_endereço());
+            var xDoc = XDocument.Load(Form1.Endereço);
             var node = xDoc.Descendants("User").FirstOrDefault(us => us.Element("ID").Value == IdBox.Text);
             var pontos_atuais = Double.Parse(node.Element("Score").Value);
             
             if (node == null)
             {
                 MessageBox.Show("User not Found!");
-                xDoc.Save(User_register.Get_endereço());
+                xDoc.Save(Form1.Endereço);
                 this.Close();
             }else if (pontos_atuais < 80000)
             {
@@ -41,7 +41,7 @@ namespace UCL_OOP_I
 
                 MessageBox.Show("Restante de pontos: " + pontos_atuais);
             }
-            xDoc.Save(User_register.Get_endereço());
+            xDoc.Save(Form1.Endereço);
             this.Close();
         }
 

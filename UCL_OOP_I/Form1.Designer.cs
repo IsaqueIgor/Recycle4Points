@@ -44,6 +44,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.Rewards_btn = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.folderconfig = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,11 +54,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.folderconfig)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(197)))), ((int)(((byte)(45)))));
+            this.panel1.Controls.Add(this.folderconfig);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -226,6 +229,18 @@
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.PictureBox7_Click_1);
             // 
+            // folderconfig
+            // 
+            this.folderconfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.folderconfig.Image = ((System.Drawing.Image)(resources.GetObject("folderconfig.Image")));
+            this.folderconfig.Location = new System.Drawing.Point(65, 3);
+            this.folderconfig.Name = "folderconfig";
+            this.folderconfig.Size = new System.Drawing.Size(44, 40);
+            this.folderconfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.folderconfig.TabIndex = 12;
+            this.folderconfig.TabStop = false;
+            this.folderconfig.Click += new System.EventHandler(this.Folderconfig_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +272,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.folderconfig)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,6 +295,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label Rewards_btn;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox folderconfig;
     }
 }
 

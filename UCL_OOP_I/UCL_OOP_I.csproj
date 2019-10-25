@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
@@ -53,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cupom.cs" />
+    <Compile Include="FolderConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderConfig.Designer.cs">
+      <DependentUpon>FolderConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +121,9 @@
     <EmbeddedResource Include="AmazonForm.resx">
       <DependentUpon>AmazonForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FolderConfig.resx">
+      <DependentUpon>FolderConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +180,7 @@
     <Content Include="icons\coach.png" />
     <Content Include="icons\cross.png" />
     <Content Include="icons\earth-43930_960_720.png" />
+    <Content Include="icons\folder.png" />
     <Content Include="icons\gas.png" />
     <Content Include="icons\logo_ifood.png" />
     <Content Include="icons\medal.png" />

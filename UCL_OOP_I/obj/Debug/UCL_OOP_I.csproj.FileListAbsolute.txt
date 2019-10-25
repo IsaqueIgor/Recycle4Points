@@ -63,3 +63,27 @@ C:\Users\Willian\source\repos\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.cspro
 C:\Users\Willian\source\repos\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.csproj.CopyComplete
 C:\Users\Willian\source\repos\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.exe
 C:\Users\Willian\source\repos\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.pdb
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\bin\Debug\UCL_OOP_I.exe.config
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\bin\Debug\UCL_OOP_I.exe
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\bin\Debug\UCL_OOP_I.pdb
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\bin\Debug\CsvHelper.dll
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\bin\Debug\System.ValueTuple.dll
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\bin\Debug\CsvHelper.xml
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\bin\Debug\System.ValueTuple.xml
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.csprojAssemblyReference.cache
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.AmazonForm.resources
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.Form1.resources
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.CréditoForm.resources
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.IfoodForm.resources
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.MyScores.resources
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.Properties.Resources.resources
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.rewards.resources
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.Trash_register.resources
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.UberForm.resources
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.User_register.resources
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.csproj.GenerateResource.cache
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.csproj.CoreCompileInputs.cache
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.csproj.CopyComplete
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.exe
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.pdb
+C:\Users\Isaque\Desktop\Side Projects\aula ucl\Recycle4Points\UCL_OOP_I\obj\Debug\UCL_OOP_I.FolderConfig.resources

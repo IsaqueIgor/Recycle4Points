@@ -13,7 +13,8 @@ namespace UCL_OOP_I
 {
     public partial class Form1 : Form
     {
-        
+        public static string Endereço { get; set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -58,6 +59,16 @@ namespace UCL_OOP_I
         {
             rewards recompensa = new rewards();
             recompensa.ShowDialog();
+        }
+
+        private void Folderconfig_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            fbd.Description = "Select your XML Recycle4Points DataBase Path";
+            if (fbd.ShowDialog() == DialogResult.OK)
+                MessageBox.Show(" Selected " + fbd.SelectedPath);
+            Endereço = fbd.SelectedPath+"\\User_UCL.Xml";
+
         }
     }
 }

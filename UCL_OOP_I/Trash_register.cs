@@ -42,13 +42,13 @@ namespace UCL_OOP_I {
 
         private void Recycle_button_Click(object sender, EventArgs e)
         {
-            var xDoc = XDocument.Load(User_register.Get_endereço());
+            var xDoc = XDocument.Load(Form1.Endereço);
             var node = xDoc.Descendants("User").FirstOrDefault(us => us.Element("ID").Value == id_user.Text);
 
             if (node == null)
             {
                 MessageBox.Show("User not Found!");
-                xDoc.Save(User_register.Get_endereço());
+                xDoc.Save(Form1.Endereço);
                 this.Close();
             }
 
@@ -57,7 +57,7 @@ namespace UCL_OOP_I {
             node.SetElementValue("Score", new_score);
 
             MessageBox.Show("Success! Thanks for your collaboration =)");
-            xDoc.Save(User_register.Get_endereço());
+            xDoc.Save(Form1.Endereço);
             this.Close();
         }
 
